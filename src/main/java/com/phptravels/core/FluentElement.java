@@ -62,7 +62,7 @@ public class FluentElement {
 
     public FluentElement highlight() {
         logger.debug(String.format("Highlight on %s", by));
-        ((JavascriptExecutor) getWebDriver()).executeScript("arguments[0].style.border='3px solid red'", getElement());
+        ((JavascriptExecutor) getWebDriver()).executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", getElement());
         return this;
     }
 
