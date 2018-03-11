@@ -11,5 +11,6 @@ public class DressPageSteps {
     public void clickingOnDressTab()
     {
         dressPage.clickOnDressTab();
+
     }
 }

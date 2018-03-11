@@ -12,7 +12,7 @@ Feature: Women page validation
     And I select color "<color>"
     And I select Compositions "<compositions>"
 
-    Examples:
+   Examples:
       | size | color  | compositions |
       | S    | Blue   | Cotton       |
       | M    | Orange | Cotton       |
@@ -23,6 +23,7 @@ Feature: Women page validation
     Then I verify the women Tab is clicked
     And i verify the Colorful Dress is clicked
     And i verify the stock
+
 
   Scenario Outline: Women page testing
     Given Clicking on women page tab and verify the result
@@ -45,10 +46,10 @@ Feature: Women page validation
     And I click the "<dress size>"
     And  I click the "<dress color>"
     Examples:
-      | dress size |dress color|
-      | S          |Orange|
-      | M          |Orange|
-      | L          |Orange|
+      | dress size | dress color |
+      | S          | Orange      |
+      | M          | Orange      |
+      | L          | Orange      |
 
   Scenario: Information tabs testing
     Given Clicking on women page tab and verify the result

@@ -11,12 +11,14 @@ public class WomenPageSteps {
     WomenPage womenPage = new WomenPage();
 
     @Given("^Clicking on women page tab and verify the result$")
-    public void clickingOnWomenPageTabAndVerifyTheResult() {
+    public void clickingOnWomenPageTabAndVerifyTheResult()
+    {
         womenPage.clickOnWomenTab();
     }
 
     @And("^I verify the women Tab is clicked$")
     public void iVerifyTheWomenTabIsClicked() {
+
         Assert.assertTrue(womenPage.isWomenTabClicked());
     }
 
